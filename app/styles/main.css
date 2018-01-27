@@ -1,0 +1,27 @@
+body {
+    background: azure;
+    color: darkslategray;
+    margin: 0 auto;
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+span {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span:hover {
+    color: black;
+    transition: color;
+    transition-duration: 1s;
+}
+
+span:after {
+    content: attr(data-baloon);
+}
