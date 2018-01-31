@@ -1,0 +1,1 @@
+Simple excercise for mouse events, DOM elems position and nodeList methods.
