@@ -14,6 +14,7 @@ span {
     text-decoration: underline;
     font-weight: bold;
     cursor: pointer;
+    position: relative;
 }
 
 span:hover {
@@ -22,6 +23,19 @@ span:hover {
     transition-duration: 1s;
 }
 
-span:after {
+.tooltip[data-baloon]:after {
     content: attr(data-baloon);
+    background-color: #555;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    color: azure;
+
+    height: 100%;
+    width: 120px;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
 }
